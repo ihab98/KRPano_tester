@@ -1,0 +1,50 @@
+
+<div class="row">
+    <div class="row" id="point-row">
+        <button class="test" (click) = "point1()">point1</button>
+        <button class="test" (click) = "point2()">point2</button>
+        <button class="test" (click) = "point3()">Compute</button>
+    </div>
+    <div class="row">
+        <button class="test" (click) = "height1()">height1</button>
+        <button class="test" (click) = "height2()">height2</button>
+        <button class="test" (click) = "height3()">height3</button>
+        <button class="test" (click) = "height4()">Compute</button>
+    </div>
+    <div class="row">
+        <button class="test" (click) = "distance1()">distance1</button>
+        <button class="test" (click) = "distance2()">distance2</button>
+        <button class="test" (click) = "distance3()">distance3</button>
+        <button class="test" (click) = "distance4()">distance4</button>
+        <button class="test" (click) = "distance5()">Compute</button>
+    </div>
+    <div class="row">
+        <button class="test" (click) = "vsurf1()">vsurf1</button>
+        <button class="test" (click) = "vsurf2()"> vsurf2</button>
+        <button class="test" (click) = "vsurf3()"> vsurf3</button>
+        <button class="test" (click) = "vsurf4()">vsurf4 </button>
+        <button class="test" (click) = "vsurf5()"> vsurf5</button>
+        <button class="test" (click) = "vsurf6()"> vsurf6</button>
+        <button class="test" (click) = "vsurf7()">Compute</button>
+    </div>
+    
+    <div class="row">
+        <label>User Id</label>
+        <input type="text" (change)="onUserIdSelected($event)">
+        <label>Tour Name</label>
+        <input type="text" (change)="onTourNameSelected($event)">
+        <label>Tour Region</label>
+        <input type="text" (change)="onTourRegionSelected($event)">
+    </div>
+    <input type="file" (change)="onFileSelected($event)" multiple>
+    <div class="row">
+        <button type="button" (click)="onUpload()">Upload Tour</button>
+        <button type="button" (click)="onUpload()">Delete Tour</button>
+    </div>
+    
+</div>
+
+<div id="pano" style="width:1550px;height:700px;">
+	<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+	
+</div>
